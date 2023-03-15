@@ -47,7 +47,7 @@ class Current extends Account{
       System.out.println("Balance in your Current account:" + super.balance);
    }
 }
-class Test {
+public class polymorphism {
 
    public static void main(String args[]) {
       // make instances of classes here
