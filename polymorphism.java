@@ -12,8 +12,7 @@ class Account{
    }
 }
 class Saving extends Account{
-   private double interestRate = 0.8;
-   private double balance;
+   final double interestRate = 0.8;
    public Saving(double balance) {        //Constructor for the class
       super.balance = balance;      // setting the balance of the member
    }
@@ -31,7 +30,7 @@ class Saving extends Account{
    }
 }
 class Current extends Account{
-   private double interestRate = 0.8;
+   //private double interestRate = 0.8;
    public Current(double balance) {       //Constructor for the class
       super.balance = balance;             // setting the balance of the member
    }
@@ -49,7 +48,7 @@ class Current extends Account{
 }
 public class polymorphism {
 
-   public static void main(String args[]) {
+   public static void main(String[] args) {
       // make instances of classes here
       Account[] member = new Account[2];
       member[0] = new Saving(50000);
