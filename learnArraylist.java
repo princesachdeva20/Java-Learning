@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 class learnArraylist {
     public static void main(String[] args) {
-        ArrayList<Integer> original = new ArrayList<Integer>();
+        ArrayList<Integer> original = new ArrayList<>();
         original.add(5);
         original.add(0);
         original.add(9);
@@ -13,16 +13,16 @@ class learnArraylist {
             System.out.print(i + "\t");
         }
         int index = 0;
-        ArrayList<Integer> zeroToFront = new ArrayList<Integer>();
-        for (int i = 0; i < original.size(); i++) {
-            if (original.get(i) == 0) {
-                zeroToFront.add(index, original.get(i));
+        ArrayList<Integer> zeroToFront = new ArrayList<>();
+        for (Integer integer : original) {
+            if (integer == 0) {
+                zeroToFront.add(index, integer);
                 index++;
             }
         }
-        for (int i = 0; i < original.size(); i++) {
-            if (original.get(i) != 0) {
-                zeroToFront.add(index, original.get(i));
+        for (Integer integer : original) {
+            if (integer != 0) {
+                zeroToFront.add(index, integer);
                 index++;
 
             }
